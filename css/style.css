@@ -1,0 +1,239 @@
+/*------Базовые стили-------------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: Raleway;
+    font-size: 18px;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container-header {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+._container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/*------Шапка сайта----------------------------------------------------------------------------*/
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__main-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px 20px;
+    max-height: 43px;
+    background: #181f71;
+    line-height: 11px;
+    font-size: 10px;
+}
+.main-bar__container {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    cursor: pointer;
+}
+.main-bar__logo_spbu {
+    height: 40px;
+}
+.main-bar__search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 104px;
+    padding-bottom: 135px;
+}
+.header__logo {
+     width: 190px;
+     height: 114px;
+}
+.header__menu {
+    margin: 0 0 0 66px;
+}
+.navigation {
+    padding: 15px 0;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu__item {
+    margin: 0 0 0 35px;
+}
+.menu__link {
+    font-size: 16px;
+    color: #4B5D68;
+    font-weight: 500;
+    line-height: calc(24 / 14 * 100%);
+}
+.menu__item-button {
+    background-color: #00AC97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    height: 46px;
+    width: 184px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 117%;
+    cursor: pointer;
+}
+.menu__item-button:hover {
+    opacity: 0.5;
+    background-color: #00C868;
+}
+.menu__item select {
+    outline: none;
+    color: red;
+}
+.header__title-wrapper {
+   position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 120px;
+}
+.title-wrapper-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 106%;
+}
+.title__wrapper-text {
+    font-size: 18px;
+    line-height: 133%;
+    font-weight: 500;
+}
+.wrapper-link__cirle {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    border-radius: 100px 100px 100px 100px;
+    border-top: 3px solid #00AC97;
+    border-left: 3px solid #00AC97;
+    border-right: 3px solid #00AC97;
+    border-bottom: 3px solid #00AC97;
+    background-image: url("https://img.icons8.com/material-rounded/24/ffffff/right.png");
+    cursor: pointer;
+}
+.link-cirle__text {
+    position: absolute;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    background-color: white;
+    z-index: 40;
+    top: 15px;
+    left: 45px;
+}
+.right-arrow {
+    display: inline-flex;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.right-arrow::before,
+.right-arrow::after {
+    display: inline-flex;
+    position: absolute;
+    content: '';
+}
+.right-arrow::before {
+    top: 24px;
+    left: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+}
+.right-arrow::after {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+}
+.right-arrow::after {
+    right: 0;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    transform: rotate(45deg);
+}
+
+
+    /*------Основная страница и блоки-------------------------------------------------------------------*/
+.page {
+    flex: 1 1 auto;
+}
+.page__main-block {
+
+}
+/*------Main Block----------------------------------------------------------------------------*/
+
+
+
+
+
