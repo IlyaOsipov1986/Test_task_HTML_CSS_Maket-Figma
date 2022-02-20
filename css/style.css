@@ -426,5 +426,83 @@ body {
     border-right: 3px solid black;
     transform: rotate(45deg);
 }
+/*------Подвал сайта------------------------------------------------------------------------------------*/
+.footer {
+    width: 100%;
+    height: 785px;
+    background-color: #F3F6F9;
+}
+.footer__container {
+    padding: 80px 0 151px 120px;
+}
+.footer__title {
+    color: #0D192B;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 133%;
+}
+/*------Подвал сайта(для мобилки)------------------------------------------------------------------------------------*/
+.footer__mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 10px;
+    display: none;
 
-
+}
+.footer__mobile-links {
+    display: flex;
+    flex-direction: row;
+    gap: 94px;
+    position: relative;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: darkgray;
+}
+.mobile-links__left {
+    max-width: 86px;
+}
+.footer__mobile-links li {
+    padding: 10px 0 5px 0;
+}
+.mobile-links__right a {
+    text-decoration: none;
+    color: darkgray;
+}
+.mobile-links__left a {
+    text-decoration: none;
+    color: darkgray;
+}
+.footer__mobile-links h4 {
+    font-weight: 600;
+    color: #F3F6F9;
+    padding: 10px 0 24px 0;
+    line-height: 19px;
+}
+.footer__mobile-social-wibe {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+.footer__mobile-politic {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: darkgray;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-bottom: 41px;
+}
+.footer__mobile-2018-2021 {
+    font-size: 12px;
+    color: darkgray;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 14px;
+}
