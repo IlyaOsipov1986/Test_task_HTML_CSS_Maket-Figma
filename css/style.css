@@ -82,6 +82,41 @@ body {
     line-height: 11px;
     font-size: 10px;
 }
+.burger-menu-mobile {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.burger-menu-mobile span, .burger-menu-mobile span:before, .burger-menu-mobile span:after{
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background: #333;
+    display: block;
+    transition: .3s;
+    border-radius: 1px;
+
+}
+.burger-menu-mobile span:before{
+    content: "";
+    top: -13px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: white;
+}
+.burger-menu-mobile span{
+    top: 13px;
+    background-color: white;
+}
+.burger-menu-mobile span:after{
+    content: "";
+    bottom: -13px;
+    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: white;
+}
 .main-bar__container {
     display: flex;
     align-items: center;
@@ -99,7 +134,6 @@ body {
     color: white;
     cursor: pointer;
 }
-
 .header__container {
     display: flex;
     align-items: center;
@@ -117,6 +151,7 @@ body {
     padding: 15px 0;
 }
 .menu__list {
+    color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -126,7 +161,7 @@ body {
 }
 .menu__link {
     font-size: 16px;
-    color: #4B5D68;
+    color: white;
     font-weight: 500;
     line-height: calc(24 / 14 * 100%);
 }
@@ -150,7 +185,9 @@ body {
 }
 .menu__item select {
     outline: none;
-    color: red;
+    background: none;
+    color: white;
+    cursor: pointer;
 }
 .header__title-wrapper {
    position: relative;
@@ -163,22 +200,22 @@ body {
     font-size: 64px;
     font-weight: 700;
     line-height: 106%;
+    color: white;
 }
 .title__wrapper-text {
     font-size: 18px;
     line-height: 133%;
     font-weight: 500;
+    color: white;
 }
 .wrapper-link__cirle {
     position: relative;
     width: 58px;
     height: 58px;
-    border-radius: 100px 100px 100px 100px;
-    border-top: 3px solid #00AC97;
-    border-left: 3px solid #00AC97;
-    border-right: 3px solid #00AC97;
-    border-bottom: 3px solid #00AC97;
-    background-image: url("https://img.icons8.com/material-rounded/24/ffffff/right.png");
+    border-radius: 100px 100px 90px 100px;
+    border-top: 4px solid #00AC97;
+    border-left: 4px solid #00AC97;
+    border-bottom: 4px solid #00AC97;
     cursor: pointer;
 }
 .link-cirle__text {
@@ -186,10 +223,11 @@ body {
     font-size: 16px;
     line-height: 150%;
     font-weight: 600;
-    background-color: white;
+    color: white;
     z-index: 40;
     top: 15px;
     left: 45px;
+    height: 30px;
 }
 .right-arrow {
     display: inline-flex;
@@ -209,7 +247,7 @@ body {
     left: 10px;
     width: 20px;
     height: 2px;
-    background-color: gray;
+    background-color: white;
 }
 .right-arrow::after {
     width: 10px;
@@ -218,22 +256,100 @@ body {
 }
 .right-arrow::after {
     right: 0;
-    border-top: 3px solid gray;
-    border-right: 3px solid gray;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
     transform: rotate(45deg);
 }
+.header__buttons-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 138px;
 
-
+}
+.buttons-bar__button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-color: #C0C0C0;
+    border-style: solid;
+    border-width: 1px;
+    height: 138px;
+    width: 100%;
+    cursor: pointer;
+    padding: 38px 108px 38px 60px;
+    color: white;
+}
+.buttons-bar__button:hover {
+    opacity: 0.5;
+    background-color: gray;
+    color: white;
+}
+.buttons__num {
+    font-size: 16px;
+    line-height: 106%;
+    font-weight: 600;
+}
+.buttons__name {
+    font-size: 24px;
+    line-height: 114%;
+    font-weight: 600;
+}
+.header__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    filter: brightness(50%);
+}
     /*------Основная страница и блоки-------------------------------------------------------------------*/
 .page {
     flex: 1 1 auto;
+
 }
 .page__main-block {
 
 }
 /*------Main Block----------------------------------------------------------------------------*/
+.main-block {
+    position: relative;
+}
 
+.main-block__container {
 
+}
+.main-block__body {
+    padding: 900px 0 300px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 645px;
+}
+.main-block__body > *:not(:last-child) {
+    margin: 0 0 40px 0;
+
+}
+.main-block__title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 114%;
+}
+.main-block__text {
+    color: #0D192B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 149%;
+}
+.main-block__image {
+    top: 110vh;
+    left: 47vw;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: -5;
+}
 
 
 
