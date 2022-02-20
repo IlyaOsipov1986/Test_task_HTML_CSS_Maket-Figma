@@ -313,7 +313,7 @@ body {
 .page__main-block {
 
 }
-/*------Main Block----------------------------------------------------------------------------*/
+/*------Главный блок----------------------------------------------------------------------------*/
 .main-block {
     position: relative;
 }
@@ -322,7 +322,7 @@ body {
 
 }
 .main-block__body {
-    padding: 900px 0 300px 0;
+    padding: 900px 0 50px 0;
     position: relative;
     z-index: 2;
     max-width: 645px;
@@ -348,8 +348,83 @@ body {
     position: absolute;
     width: 100%;
     height: 500px;
-    z-index: -5;
+    z-index: -66;
+}
+/*------Второй блок----------------------------------------------------------------------------*/
+.page__second-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 120px;
+    position: relative;
+    padding-bottom: 120px;
+ }
+.second-block__section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: flex-start;
+    max-width: 480px;
 }
 
+.section-left__text {
+    font-size: 16px;
+    line-height: 175%;
+    font-weight: 400;
+    color: #0D192B;
+}
+.second-block__section-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
+    max-width: 800px;
+    padding-top: 100px;
+}
+.section-right__title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 133%;
+}
+.section-right__text {
+    font-size: 16px;
+    line-height: 175%;
+    font-weight: 400;
+}
+.section-right__image {
+    margin-top: 79px;
+}
+
+.right-arrow__black {
+    display: inline-flex;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.right-arrow__black::before,
+.right-arrow__black::after {
+    display: inline-flex;
+    position: absolute;
+    content: '';
+}
+.right-arrow__black::before {
+    top: 24px;
+    left: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+.right-arrow__black::after {
+    width: 10px;
+    height: 10px;
+    top: 20px;
+}
+.right-arrow__black::after {
+    right: 0;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(45deg);
+}
 
 
